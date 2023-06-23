@@ -1,0 +1,1 @@
+Filters (jinja) can we added inside in html file inside '{{}}' after the bars '|'

@@ -1,0 +1,33 @@
+<h1>Hello World!</h1>
+
+<p>{{ stuff_title|title }}</p>
+
+<p>THis is my first webpage</p>
+
+<p>My name is {{ first_name }} </p>
+
+<p>{{ stuff_safe|safe }} </p>
+
+<p>{{ stuff_strip|striptags }} </p>
+
+<h3>Favourite Pizza:</h3>
+
+{% for topping in fav_pizza %}
+    {{ topping }}<br/>
+{% endfor %}
+
+<br/><br/>
+{{ fav_pizza.0 }}
+<br/>
+{{ fav_pizza.0 , fav_pizza.1}}
+<br/>
+{{ fav_pizza.3 + 10 }}
+
+<br/><br/>
+{% for topping in fav_pizza %}
+    {% if topping == 41 %}
+        {{ topping + 100 }}<br/>
+    {% else %}
+        {{ topping }}<br/>
+    {% endif %}
+{% endfor %}
